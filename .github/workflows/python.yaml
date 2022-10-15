@@ -15,9 +15,11 @@ jobs:
       - name: Install tox and any other packages
         run: pip install tox
       # Run tox using the version of Python in `PATH`
-      - name: Run tests
-        run: tox -e py
-      - name: Run lint
+      - name: Run linter
         run: tox -e lint
-      - name: Run type
+      - name: Run type checker
         run: tox -e type
+      - name: Run tests and collect coverage
+        run: tox -e coverage 
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
