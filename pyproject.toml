@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "recordio-py"
-version = "0.1.0"
+version = "0.2.0"
 description = "Recordio reader/writer"
 readme = "README.md"
 authors = [{ name = "Chris Lamb", email = "chlamb16@gmail.com" }]
@@ -13,6 +13,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 keywords = ["recordio"]
 dependencies = []
